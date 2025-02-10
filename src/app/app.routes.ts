@@ -7,5 +7,6 @@ export const routes: Routes = [
     { path: 'about', component: AboutComponent },
     { path: 'portfolio', component: PortfolioComponent },
     { path: 'contact', component: ContactComponent },
-    { path: '', redirectTo: '/about', pathMatch: 'full' }
-  ];
+    { path: '', redirectTo: '/about', pathMatch: 'full' },
+    { path: '**', redirectTo: '/about' } // Catch-all route for 404 handling
+];
