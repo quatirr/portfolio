@@ -1,0 +1,114 @@
+/* Styling untuk Portfolio Container */
+.portfolio-container {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f0f2f5;
+  font-family: 'Arial', sans-serif;
+}
+
+.portfolio-container h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-weight: 800;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.portfolio-container p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+
+/* Styling untuk Project Card */
+.project-card {
+  background: linear-gradient(145deg, #ffffff, #f1f1f1);
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 15px rgba(0, 0, 0, 0.05);
+  margin: 30px;
+  padding: 30px;
+  transition: all 0.3s ease;
+}
+
+.project-card h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #333;
+  font-weight: 600;
+}
+
+.project-card a {
+  text-decoration: none;
+}
+
+/* Efek Hover pada Project Card */
+.project-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15), 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Styling untuk Tombol */
+.project-card button {
+  background: linear-gradient(145deg, #4CAF50, #45a049);
+  color: white;
+  font-size: 1rem;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 15px;
+}
+
+.project-card button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Layout Responsif */
+@media (max-width: 768px) {
+  .portfolio-container {
+    padding: 40px 10px;
+  }
+
+  .project-card {
+    margin: 20px;
+    padding: 25px;
+  }
+
+  .project-card h2 {
+    font-size: 1.7rem;
+  }
+
+  .project-card button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .portfolio-container p {
+    font-size: 1rem;
+  }
+
+  .project-card {
+    margin: 10px 0;
+  }
+
+  .project-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .project-card button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
